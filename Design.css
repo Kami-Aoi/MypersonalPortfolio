@@ -1,0 +1,159 @@
+body {
+    background-color: #98D2C0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    padding-top: 100px;
+}
+
+header {
+    background: #205781;
+    padding: 5px;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex; 
+    align-items: center;
+    z-index: 1000;
+}
+
+h1 {
+    margin-right: 50px; 
+    text-decoration: none;
+}
+
+header a {
+    color: white; 
+    text-decoration: none;
+    margin: 0 25px;
+}
+
+.circle-image {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%;
+    margin: 20px; 
+    transition: transform 0.3s ease;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 20px;
+}
+
+.image-box {
+    background-color: #4F959D; 
+    padding: 20px;
+    border-radius: 40px; 
+    position: relative;
+    overflow: hidden;
+}
+
+.image-box:hover .circle-image {
+    transform: translateY(-20px);
+}
+
+.details {
+    display: none;
+    text-align: center;
+}
+
+.image-box:hover .details {
+    display: block;
+}
+
+.skill-bar {
+    background-color: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+    display: none;
+}
+
+.skill {
+    height: 20px;
+    border-radius: 20px;
+}
+
+.image-box:hover .skill-bar {
+    display: block;
+}
+
+.html-skill {
+    background-color: red;
+}
+
+.css-skill {
+    background-color: blue;
+}
+
+.video-section {
+    margin-top: 50px;
+    text-align: center;
+    background-color: #205781;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.video-container {
+    margin: 20px;
+}
+
+.emoji-container {
+    display: none;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.emoji {
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+.favorite-box:hover .emoji-container {
+    display: flex;
+}
+
+.favorite-box {
+    background-color: #4F959D;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+.triangle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.triangle-container .top-image {
+    margin-bottom: -50px;
+}
+
+.triangle-container .bottom-images {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #205781;
+    color: white;
+}
+
+.entity-box {
+    background-color: #4F959D;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+}
